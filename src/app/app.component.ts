@@ -1,3 +1,4 @@
+import { TransferenciaService } from './services/transferencia.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'bank';
+  title = 'bytebank';
+  transferencias: any[] = [];
+
+  constructor(private service: TransferenciaService) { }
+
+
 }
